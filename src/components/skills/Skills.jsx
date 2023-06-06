@@ -54,7 +54,7 @@ const Skills = () => {
             <li>
               <span className="dark-bg">2008-2012</span>
               <h6>Bachelors of Chemistry</h6>
-              <p>North Carolina State University again</p>
+              <p>North Carolina State University</p>
             </li>
           </ul>
         </div>
