@@ -7,7 +7,7 @@ const AllPortfolioContent = [
     img: "img/portfolio/1.png",
     title: "Fomore",
     subTitle: "Web App",
-    info: "lorem epsum blah blah blah",
+    info: "Itinerary planning app that utilizes Yelp's event and resturant API to provide a real time source of things to do in a city you are traveling too.",
     date: "December, 2022",
     techStack: "React, FastApi, MongoDB",
     alterText: "",
@@ -97,22 +97,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
-
-
-                        {/* <Item
-                          original={val.img}
-                          thumbnail={val.img}
-                          width={336}
-                          height={458}
-                        >
-                          {({ ref }) => (
-                            <img
-                              src={val.img}
-                              alt="Shoot"
-                              role="button"
-                              ref={ref}
-                              onClick={handleImageClick(val)}
-                            />
-                          )}
-                        </Item> */}

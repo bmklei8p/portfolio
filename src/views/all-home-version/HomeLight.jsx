@@ -23,7 +23,7 @@ const HomeOne = () => {
 
       {/* About Me */}
       {/* About me background section color */}
-      <section style={{backgroundColor: "rgb(225 225 225)"}} id="about" className="section about-section after-left-section">
+      <section style={{backgroundColor: "rgb(151 151 151)"}} id="about" className="section about-section after-left-section">
       {/* <section style={{backgroundColor: "#374355"}} id="about" className="section about-section after-left-section"> */}
         <div className="container">
           <About />
@@ -52,15 +52,16 @@ const HomeOne = () => {
       {/* End Services */}
 
       {/*  Skills */}
-      {/* <section style={{backgroundColor: "#374355"}}  className="section skill-section"> */}
-      <section className="section skill-section">  
+      {/* <section style={{backgroundColor: "#fff5ec"}}  className="section skill-section"> */}
+      <section style={{backgroundColor: "rgb(199 191 183)"}}  className="section skill-section">
         <div className="container">
           <Skills />
         </div>
       </section>
       {/* End Skills */}
 
-      <section id="work" className="section gray-bg">
+      {/* <section id="work" className="section gray-bg"> */}
+      <section id="work" style={{backgroundColor: "rgb(151 151 151)"}} className="section">
         <div className="container">
           <div className="row justify-content-center section-title text-center">
             <div className="col-lg-7">
@@ -81,7 +82,7 @@ const HomeOne = () => {
 
       {/* Contact */}
       {/* <section style={{backgroundColor: "#374355"}} id="contact" className="section after-left-section"> */}
-      <section id="contact" className="section after-left-section">  
+      <section style={{backgroundColor: "rgb(199 191 183)"}} id="contact" className="section after-left-section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 my-3">

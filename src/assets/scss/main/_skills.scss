@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .skills-item {
     display: flex;
     flex-direction: column;
@@ -11,25 +11,24 @@
     margin: 10px;
     text-align: center;
   }
-  
+
   .skills-item-circle {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(151 151 151);
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .skills-item-image {
     width: 80px;
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
   }
-  
+
   .skills-item-text {
     margin-top: 5px;
   }
-  
