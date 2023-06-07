@@ -1,13 +1,10 @@
 import ProjectCard from "./PortfolioCard"
 
-
-
-
 const PortfolioTest = () => {
     const projectsList = [
         {
             title: "Fomore",
-            imageUrl: "",
+            imageUrl: "img/portfolio/1.png",
             info: "lorem epsum blah blah blah",
             techStack: "React, FastApi, MongoDB",
             date: "December, 2022",
@@ -34,7 +31,7 @@ const PortfolioTest = () => {
     return (
         <>
             {projectsList.map((project) => (
-                <ProjectCard title={project.title} imageUrl={project.imageUrl}
+                <ProjectCard key={project.title} title={project.title} image={project.imageUrl}
                 info={project.info} techStack={project.techStack} date={project.date} url={project.url} />
             ))
             }

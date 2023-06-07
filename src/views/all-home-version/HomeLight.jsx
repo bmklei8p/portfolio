@@ -10,10 +10,10 @@ import Portfolio from "../../components/portfolio/Portfolio";
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import useDocumentTitle from "../../components/useDocumentTitle";
-import PortfolioTest from "../../components/portfolio/PortfolioTest";
+// import PortfolioTest from "../../components/portfolio/PortfolioTest";
 
 const HomeOne = () => {
-  useDocumentTitle("Home Light || React Personal Portfolio Template");
+  useDocumentTitle("Bryan Kleinberg Portfolio");
   return (
     <>
       <Header />
@@ -23,8 +23,8 @@ const HomeOne = () => {
 
       {/* About Me */}
       {/* About me background section color */}
-      {/* <section style={{backgroundColor: "rgb(225 225 225)"}} id="about" className="section about-section after-left-section"> */}
-      <section style={{backgroundColor: "#374355"}} id="about" className="section about-section after-left-section">
+      <section style={{backgroundColor: "rgb(225 225 225)"}} id="about" className="section about-section after-left-section">
+      {/* <section style={{backgroundColor: "#374355"}} id="about" className="section about-section after-left-section"> */}
         <div className="container">
           <About />
         </div>
@@ -52,7 +52,8 @@ const HomeOne = () => {
       {/* End Services */}
 
       {/*  Skills */}
-      <section style={{backgroundColor: "#374355"}}  className="section skill-section">
+      {/* <section style={{backgroundColor: "#374355"}}  className="section skill-section"> */}
+      <section className="section skill-section">  
         <div className="container">
           <Skills />
         </div>
@@ -73,39 +74,14 @@ const HomeOne = () => {
           </div>
           {/* End .row */}
           <Portfolio />
-          <PortfolioTest />
           {/* <PortfolioTest /> */}
         </div>
       </section>
       {/* End Portfolio */}
 
-      {/* <div className="section testimonial">
-        <div className="container">
-          <Testimonial />
-        </div>
-      </div> */}
-      {/* End testimonial */}
-
-      {/* Blog */}
-      {/* <section id="blog" className="section gray-bg">
-        <div className="container">
-          <div className="row justify-content-center section-title text-center">
-            <div className="col-lg-7">
-              <h3 className="font-alt">Recent articles</h3>
-              <p>
-                I design and develop services for customers of all sizes,
-                specializing in creating stylish, modern websites, web services
-                and online stores.
-              </p>
-            </div>
-          </div>
-          <Blog />
-        </div>
-      </section> */}
-      {/*  End Blog */}
-
       {/* Contact */}
-      <section style={{backgroundColor: "#374355"}} id="contact" className="section after-left-section">
+      {/* <section style={{backgroundColor: "#374355"}} id="contact" className="section after-left-section"> */}
+      <section id="contact" className="section after-left-section">  
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 my-3">

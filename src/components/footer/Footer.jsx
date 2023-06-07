@@ -1,18 +1,14 @@
 import React from "react";
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
+  FaGithub,
+  FaGitlab,
   FaLinkedinIn,
-  FaPinterestP,
 } from "react-icons/fa";
 
 const SocialShare = [
-  { Social: <FaFacebookF />, link: "https://www.facebook.com/" },
-  { Social: <FaTwitter />, link: "https://www.linkedin.com/" },
-  { Social: <FaInstagram />, link: "https://www.instagram.com/" },
-  { Social: <FaLinkedinIn />, link: "https://twitter.com/" },
-  { Social: <FaPinterestP />, link: "https://www.pinterest.com/" },
+  { Social: <FaGithub />, link: "https://www.https://github.com/bmklei8p.com/" },
+  { Social: <FaLinkedinIn />, link: "https://https://www.linkedin.com/in/bmkleinb/.linkedin.com/" },
+  { Social: <FaGitlab />, link: "https://https://gitlab.com/bmklei8p.instagram.com/" },
 ];
 
 const Footer = () => {
@@ -34,14 +30,8 @@ const Footer = () => {
         <div className="col-md-6 my-2 text-center text-md-right">
           <p>
             © {new Date().getFullYear()} copyright{" "}
-            <a
-              href="https://themeforest.net/user/ib-themes/portfolio"
-              target="_blank"
-              rel="noreferrer"
-            >
-              ib-themes
-            </a>{" "}
-            all right reserved
+              Bryan Kleinberg
+            all rights reserved
           </p>
         </div>
         {/* End .col */}
