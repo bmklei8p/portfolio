@@ -15,7 +15,7 @@ const AllPortfolioContent = [
   {
     img: "img/portfolio/3.jpg",
     title: "Formula 1 Pitstop",
-    subTitle: "Nuna ios App",
+    subTitle: "Web App",
     alterText: "Web App",
     portfolioLink:
       "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
@@ -23,7 +23,7 @@ const AllPortfolioContent = [
   {
     img: "img/portfolio/2.jpg",
     title: "Boss App",
-    subTitle: "Themeforest Marke",
+    subTitle: "Web App",
     alterText: "Web App",
     portfolioLink:
       "https://dribbble.com/shots/16529407-Deski-Saas-Software-React-Template",
@@ -37,13 +37,6 @@ const Portfolio = () => {
     <div className="positon-relative">
       <div className="portfolio-filter-01">
         <Tabs>
-          {/* <TabList className="filter d-flex justify-content-center">
-            {tabList.map((val, i) => (
-              <Tab key={i}>{val}</Tab>
-            ))}
-          </TabList> */}
-          {/* End tablist */}
-
           <Gallery>
             <TabPanel>
               <div className="portfolio-content row lightbox-gallery">

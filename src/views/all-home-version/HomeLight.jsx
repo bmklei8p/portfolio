@@ -22,7 +22,9 @@ const HomeOne = () => {
       {/* End Banner Section */}
 
       {/* About Me */}
-      <section style={{backgroundColor: "rgb(225 225 225)"}} id="about" className="section about-section after-left-section">
+      {/* About me background section color */}
+      {/* <section style={{backgroundColor: "rgb(225 225 225)"}} id="about" className="section about-section after-left-section"> */}
+      <section style={{backgroundColor: "#374355"}} id="about" className="section about-section after-left-section">
         <div className="container">
           <About />
         </div>
@@ -50,7 +52,7 @@ const HomeOne = () => {
       {/* End Services */}
 
       {/*  Skills */}
-      <section className="section skill-section">
+      <section style={{backgroundColor: "#374355"}}  className="section skill-section">
         <div className="container">
           <Skills />
         </div>
@@ -71,6 +73,7 @@ const HomeOne = () => {
           </div>
           {/* End .row */}
           <Portfolio />
+          <PortfolioTest />
           {/* <PortfolioTest /> */}
         </div>
       </section>
@@ -102,7 +105,7 @@ const HomeOne = () => {
       {/*  End Blog */}
 
       {/* Contact */}
-      <section id="contact" className="section after-left-section">
+      <section style={{backgroundColor: "#374355"}} id="contact" className="section after-left-section">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 my-3">
