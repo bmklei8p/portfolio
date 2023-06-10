@@ -54,8 +54,12 @@
   box-shadow: $px-shadow;
   margin: 15px 0;
   position: relative;
+
   .portfolio-img {
     position: relative;
+  }
+  .portfolio-img-container {
+    border: 10px solid #372231;
   }
   img {
     margin: auto;
@@ -78,6 +82,7 @@
         }
       }
     }
+
   }
   .gallery-link {
     display: block;
@@ -149,6 +154,7 @@
       // span {
       //   color: rgba($px-white, 0.85);
       // }
+
     }
     .portfolio-icon {
       opacity: 1;

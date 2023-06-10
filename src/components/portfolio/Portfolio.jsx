@@ -16,7 +16,7 @@ const AllPortfolioContent = [
       "https://fomore.azurewebsites.net/",
   },
   {
-    img: "img/portfolio/3.jpg",
+    img: "img/portfolio/2.png",
     title: "Formula 1 Pitstop",
     info: "lorem epsum blah blah blah",
     subTitle: "Web App",
@@ -27,7 +27,7 @@ const AllPortfolioContent = [
       "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
   },
   {
-    img: "img/portfolio/3.jpg",
+    img: "img/portfolio/3.png",
     title: "B.O.S.S. App",
     info: "lorem epsum blah blah blah",
     subTitle: "Web App",
@@ -91,8 +91,9 @@ const Portfolio = () => {
                           </h5>
                           <span>{val.subTitle}</span>
                         </div>
-                        {/* End .portfolio-info */}
+                        <div className="portfolio-img-container">
                         <img src={val.img} alt={"none"} onClick={() => handleImageClick(val)} />
+                        </div>
                         <a
                           href={val.portfolioLink}
                           className="portfolio-icon"
