@@ -56,8 +56,6 @@ const Portfolio = () => {
   useEffect(() => {
     const handleClickOutside = (event) => {
       if ( modalRef.current !== null ) {
-        console.log("modalRef.current:", modalRef.current)
-        console.log("event.target.className:", event.target.className)
         if (
         event.target.className === "modal-overlay"
       )  {
