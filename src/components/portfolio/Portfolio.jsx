@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef, useEffect} from "react";
 import PortfolioModal from "./PortfolioCard";
 
 
@@ -43,6 +43,7 @@ const AllPortfolioContent = [
 
 const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const modalRef = useRef(null);
 
   const handleImageClick = (project) => {
     setSelectedProject(project);
@@ -51,6 +52,26 @@ const Portfolio = () => {
   const handleCloseModal = () => {
     setSelectedProject(null);
   }
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if ( modalRef.current !== null ) {
+        console.log("modalRef.current:", modalRef.current)
+        console.log("event.target.className:", event.target.className)
+        if (
+        event.target.className === "modal-overlay"
+      )  {
+        handleCloseModal();
+      }
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="positon-relative">
@@ -88,7 +109,7 @@ const Portfolio = () => {
                   </div>
                 ))}
                 {selectedProject && (
-                  <PortfolioModal project={selectedProject} onClose={handleCloseModal} />
+                  <PortfolioModal project={selectedProject} onClose={handleCloseModal} ref={modalRef} />
                 )}
               </div>
       </div>
