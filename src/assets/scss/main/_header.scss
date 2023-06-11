@@ -121,7 +121,11 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    border: 2px solid $px-theme;
     overflow: hidden;
+    @media (max-width: 767px) {
+      margin-left: 15px;
+    }
   }
 
   .navbar-nav {

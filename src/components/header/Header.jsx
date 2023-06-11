@@ -28,7 +28,7 @@ const Header = () => {
             <NavLink to="/">
             <div className="avatar-container">
               <img
-                  src="img/about/bryanPortrait.JPG"
+                  src="img/about/bryanAvatar.png"
                   alt="brand logo"
                 />
             </div>
