@@ -16,7 +16,18 @@ const skillsList = [
   { id: 11, imageSrc: "img/skills/springboot_icon.png", text: 'Spring Boot' },
 ]
 const Skills = () => {
-  const desktop = window.innerWidth >= 900;
+  const [desktop, setDesktop] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setDesktop(window.innerWidth >= 768);
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const educationStyleDesktop = {
     display: 'flex', 

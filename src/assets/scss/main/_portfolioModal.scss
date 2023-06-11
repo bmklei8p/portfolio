@@ -19,7 +19,7 @@ $modal-text-container-margin-left: 20px;
   overflow-y: auto;
 
   .modal {
-    background-color: #fff;
+    background-color: $px-altbeige;
     max-width: $modal-max-width;
     padding: $modal-padding;
     border-radius: $modal-border-radius;
@@ -27,28 +27,12 @@ $modal-text-container-margin-left: 20px;
 
     .modal-content {
       display: flex;
-    //   position: relative;
       top: 50%;
-    //   transform: translateY(-50%);
       margin-top: 0;
       flex-direction: column;
-      overflow: hidden;
-    //   margin-right: 10px;
+      overflow: scroll;
       max-height: 90vh;
       overflow-y: auto;
-
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-  
-      ::-webkit-scrollbar-thumb {
-        background-color: #f40a0a;
-        border-radius: 4px;
-      }
-  
-      ::-webkit-scrollbar-thumb:hover {
-        background-color: #555;
-      }
 
       .close {
         position: absolute;

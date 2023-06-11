@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from "react";
-import PortfolioModal from "./PortfolioCard";
+import PortfolioModal from "./PortfolioModal";
 
 
 const AllPortfolioContent = [
