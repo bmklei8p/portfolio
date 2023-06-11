@@ -63,7 +63,7 @@
   margin-bottom: 30px;
   h4 {
     color: $px-dark;
-    font-size: 24px;
+    font-size: 2rem;
     position: relative;
     padding: 0 0 15px;
     margin: 0;
@@ -668,7 +668,12 @@
   .aducation-box {
     margin: 0;
     list-style: none;
-    padding: 25px;
+    @media (max-width: 767px) {
+      padding: 25px;
+    }
+    @media (min-width: 768px) {
+      padding: 6rem;
+    }
     box-shadow: $px-shadow;
     li {
       + li {

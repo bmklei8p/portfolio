@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEffect } from 'react';
+
 
 const skillsList = [
   { id: 1, imageSrc: "img/skills/java_icon.png", text: 'Java' },
@@ -14,10 +16,22 @@ const skillsList = [
   { id: 11, imageSrc: "img/skills/springboot_icon.png", text: 'Spring Boot' },
 ]
 const Skills = () => {
+  const desktop = window.innerWidth >= 900;
+
+  const educationStyleDesktop = {
+    display: 'flex', 
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    alignItems: 'center'
+  }
+
+  const eductionStyleMobile = {
+  }
+
   return (
     <>
       <div className="skills-row">
-        <div className="col-lg-6 my-3">
+        <div className="col-lg-6 my-3" style={ desktop ? educationStyleDesktop : eductionStyleMobile}>
           <div className="sm-title">
             <h4 className="font-alt">Education</h4>
           </div>
@@ -41,7 +55,7 @@ const Skills = () => {
         </div>
 
 
-        <div className="col-lg-6 col-sm-12 my-3">
+        <div className="col-lg-6 col-sm-12 my-3" style={ desktop ? educationStyleDesktop : {}} >
           <div className="sm-title">
             <h4 className="font-alt">Skills</h4>
           </div>
