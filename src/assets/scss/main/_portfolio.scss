@@ -57,6 +57,7 @@
 
   .portfolio-img {
     position: relative;
+    // height: 560px;  /* set a fixed height */
   }
   .portfolio-img-container {
     border: 10px solid #372231;
@@ -64,6 +65,7 @@
   img {
     margin: auto;
     display: block;
+    max-width: 100%;
   }
   .portfolio-info {
     padding-bottom: 20px;
