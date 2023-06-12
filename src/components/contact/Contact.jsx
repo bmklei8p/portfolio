@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
 
 const Contact = () => {
   const {
@@ -8,9 +9,24 @@ const Contact = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data, e) => {
+  const onSubmit = async (data, e) => {
     e.target.reset();
     console.log("Message submited: " + JSON.stringify(data));
+
+    try {
+      const response = await axios.post("http://localhost:8000/submit-form", data);
+  
+      if (response.status === 200) {
+        console.log('Email sent successfully');
+        // Optionally, you can show a success message to the user
+      } else {
+        console.error('Failed to send email');
+        // Optionally, you can show an error message to the user
+      }
+    } catch (error) {
+      console.error('An error occurred while sending the email', error);
+      // Optionally, you can show an error message to the user
+    }
   };
 
   return (
