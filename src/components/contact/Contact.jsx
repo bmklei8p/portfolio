@@ -11,11 +11,12 @@ const Contact = () => {
 
   const onSubmit = async (data, e) => {
     e.target.reset();
-    console.log("Message submited: " + JSON.stringify(data));
 
     try {
-      const response = await axios.post("http://localhost:8000/submit-form", data);
-  
+      // const response = await axios.post("http://localhost:8000/submit-form", data);
+      // backend prod
+      console.log(data)
+      const response = await axios.post("https://portfolio-email-service.azurewebsites.net/submit-form", data);
       if (response.status === 200) {
         console.log('Email sent successfully');
         // Optionally, you can show a success message to the user
