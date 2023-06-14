@@ -55,8 +55,6 @@ const Header = () => {
                   : "mobile-menu navbar-collapse justify-content-end"
               }
             >
-{/*
-              THIS NEEDS TO BE UPDATED - SLIDER AND TOP LEFT IMG TO BE MY NAME */}
               <Link to="/" className="sidebar-logo">
                 <img src="img/logo/logo.svg" alt="brand" />
               </Link>

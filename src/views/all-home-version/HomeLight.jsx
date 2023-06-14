@@ -2,57 +2,29 @@ import React from "react";
 import Header from "../../components/header/Header";
 import Slider from "../../components/slider/Slider";
 import About from "../../components/about/About";
-// import Service from "../../components/service/Service";
 import Skills from "../../components/skills/Skills";
 import Portfolio from "../../components/portfolio/Portfolio";
-// import Testimonial from "../../components/testimonial/Testimonial";
-// import Blog from "../../components/blog/Blog";
 import Contact from "../../components/contact/Contact";
 import Footer from "../../components/footer/Footer";
 import useDocumentTitle from "../../components/useDocumentTitle";
-// import PortfolioTest from "../../components/portfolio/PortfolioTest";
 
 const HomeOne = () => {
   useDocumentTitle("Bryan Kleinberg Portfolio");
   return (
     <>
       <Header />
-      {/* End Header Section */}
+
       <Slider />
-      {/* End Banner Section */}
 
       {/* About Me */}
-      {/* About me background section color */}
       <section style={{backgroundColor: "rgb(151 151 151)"}} id="about" className="section about-section after-left-section">
-      {/* <section style={{backgroundColor: "#374355"}} id="about" className="section about-section after-left-section"> */}
         <div className="container">
           <About />
         </div>
       </section>
       {/* End About Me */}
 
-      {/* Services */}
-
-      {/* <section id="services" className="section services-section gray-bg">
-        <div className="container">
-          <div className="row justify-content-center section-title text-center">
-            <div className="col-lg-7">
-              <h3 className="font-alt">My Services</h3>
-              <p>
-                I design and develop services for customers of all sizes,
-                specializing in creating stylish, modern websites, web services
-                and online stores.
-              </p>
-            </div>
-          </div>
-          <Service />
-        </div>
-      </section> */}
-
-      {/* End Services */}
-
       {/*  Skills */}
-      {/* <section style={{backgroundColor: "#fff5ec"}}  className="section skill-section"> */}
       <section style={{backgroundColor: "rgb(199 191 183)"}}  className="section skill-section">
         <div className="container">
           <Skills />
@@ -60,7 +32,6 @@ const HomeOne = () => {
       </section>
       {/* End Skills */}
 
-      {/* <section id="work" className="section gray-bg"> */}
       <section id="work" style={{backgroundColor: "rgb(151 151 151)"}} className="section">
         <div className="container">
           <div className="row justify-content-center section-title text-center">
@@ -73,15 +44,12 @@ const HomeOne = () => {
               </p>
             </div>
           </div>
-          {/* End .row */}
           <Portfolio />
-          {/* <PortfolioTest /> */}
         </div>
       </section>
       {/* End Portfolio */}
 
       {/* Contact */}
-      {/* <section style={{backgroundColor: "#374355"}} id="contact" className="section after-left-section"> */}
       <section style={{backgroundColor: "rgb(199 191 183)"}} id="contact" className="section after-left-section">
         <div className="container">
           <div className="row align-items-center">
@@ -90,7 +58,6 @@ const HomeOne = () => {
                 <div className="sm-title">
                   <h4 className="font-alt">Contact me</h4>
                 </div>
-                {/* End .sm-title */}
                 <Contact />
               </div>
             </div>
