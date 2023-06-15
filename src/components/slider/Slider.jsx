@@ -1,5 +1,4 @@
 import React from "react";
-import TextLoop from "react-text-loop";
 import Social from "../Social";
 
 const Slider = () => {
@@ -51,13 +50,14 @@ const Slider = () => {
               <div className="hb-typo text-center">
                 <h6>Hi There, I'm</h6>
                 <h1 className="font-alt">Bryan Kleinberg</h1>
-                <h2>
+                {/* textloop dependency */}
+                {/* <h2>
                   <TextLoop>
                     <span className="loop-text">Software Engineer</span>
                     <span className="loop-text"> UI/UX Designer</span>
                     <span className="loop-text"> App Developer</span>
                   </TextLoop>{" "}
-                </h2>
+                </h2> */}
               </div>
             </div>
           </div>

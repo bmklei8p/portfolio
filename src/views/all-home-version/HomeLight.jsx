@@ -12,8 +12,10 @@ const HomeOne = () => {
   useDocumentTitle("Bryan Kleinberg Portfolio");
   return (
     <>
+      {/* has scrollspy dependency */}
       <Header />
 
+      {/* has text-loop dependency */}
       <Slider />
 
       {/* About Me */}
@@ -49,6 +51,8 @@ const HomeOne = () => {
       </section>
       {/* End Portfolio */}
 
+
+      {/* react-hook-from and axios */}
       {/* Contact */}
       <section style={{backgroundColor: "rgb(199 191 183)"}} id="contact" className="section after-left-section">
         <div className="container">
