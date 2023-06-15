@@ -19,9 +19,9 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18.x'
+          node-version: '16.x'
 
-      - name: npm install, build
+      - name: npm install, build, and test
         run: |
           npm install -f
           npm run build --if-present
@@ -57,5 +57,5 @@ jobs:
         with:
           app-name: 'bryan-kleinberg-portfolio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8A53DF32A0C94AFFBFCC61C4299AC4D2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_82881B230BA643C0A7805B8ADB80F148 }}
           package: .
