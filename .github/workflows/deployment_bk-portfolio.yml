@@ -58,4 +58,4 @@ jobs:
           app-name: 'bk-portfolio'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_22E2053E4D8742B4B2BF174902EA3063 }}
-          package: release.zip
+          package: .
