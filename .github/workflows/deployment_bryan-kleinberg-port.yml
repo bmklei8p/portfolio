@@ -52,7 +52,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'bryan-kleinberg-portfolio'
+          app-name: 'bryan-kleinberg-port'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_05D14C0E365B4C829302B5397852A9EE }}
           package: release.zip
