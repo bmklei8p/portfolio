@@ -48,9 +48,15 @@ jobs:
         with:
           name: node-app
 
+      - name: Check current directory before unzip
+        run: pwd
+        
       - name: unzip artifact for deployment
-        run: unzip release.zip  
-  
+        run: unzip release.zip
+        
+      - name: Check current directory after unzip
+        run: pwd
+        
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
