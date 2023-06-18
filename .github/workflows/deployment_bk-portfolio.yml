@@ -26,14 +26,15 @@ jobs:
           npm install
           npm run build --if-present
 
-      - name: zip artifact for deployment
-        run: zip release.zip ./build/* 
+      # - name: zip artifact for deployment
+      #   run: zip release.zip ./build/* 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: release.zip
+          # path: release.zip
+          path: .
 
   deploy:
     runs-on: ubuntu-latest
@@ -48,14 +49,14 @@ jobs:
         with:
           name: node-app
 
-      - name: Check current directory before unzip
-        run: pwd
+      # - name: Check current directory before unzip
+      #   run: pwd
         
-      - name: unzip artifact for deployment
-        run: unzip release.zip
+      # - name: unzip artifact for deployment
+      #   run: unzip release.zip
         
-      - name: Check current directory after unzip
-        run: pwd
+      # - name: Check current directory after unzip
+      #   run: pwd
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
