@@ -48,14 +48,14 @@ jobs:
         with:
           name: node-app
 
-      # - name: Check current directory before unzip
-      #   run: pwd
+      - name: Check current directory before unzip
+        run: pwd
         
-      # - name: unzip artifact for deployment
-      #   run: unzip release.zip
+      - name: unzip artifact for deployment
+        run: unzip release.zip
         
-      # - name: Check current directory after unzip
-      #   run: pwd
+      - name: Check current directory after unzip
+        run: pwd
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
