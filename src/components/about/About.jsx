@@ -35,7 +35,7 @@ const About = () => {
                 </div>
                 <div className="media">
                   <label>Discord</label>
-                  <p>skype.0404</p>
+                  <p>bmkleinb</p>
                 </div>
                 <div className="media">
                   <label>Freelance</label>

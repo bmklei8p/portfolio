@@ -1,38 +1,26 @@
-# Krozo React Personal Portfolio Template
+# Bryan Kleinberg Portfolio
 
 ## Description
 
-Setup Procedure
+Personal project portfolio based on template https://krozo.ibthemespro.com/home-light.
+The biggest changes I made to the template:
+    - On click of project image, load a project detials modal instead of just image. 
+    - Added custom skills badges for all skills instead of block list. Made this section mobile responsive.
+    - Hooked up contact me form to a custom FastApi simple mail transfer protocol server to send e-mails to my personal e-mail. https://github.com/bmklei8p/email_service
+    - Avatar picture used instead of text logo.
+    - UI/UX changes for styling and resposiveness
 
-## Project setup
+## Live link
+https://bk-portfolio.azurewebsites.net/
 
-```
-npm install
-```
+## Project Setup
+- Clone github https://github.com/bmklei8p/portfolio
+- npm install
+- npm start
+- Enjoy!
 
-### Compiles and hot-reloads for development
-
-```
-npm run start
-```
-
-### Compiles and minifies for production
-
-```
-npm run build
-```
-
-### Lints and fixes files
-
-```
-npm run lint
-```
-
-### Customize configuration (vue-cli)
-
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-###  To do?
-Logo text (name in upper left) uppercase or lowercase? first name only or first + last?
-
+## Features and updates needed:
+ - Update background image for banner to have code/programming image instead of a photoshop type image.
+ - Hide scroll bar on modal for larger project details pages
+ - Project images a consistent size regardless of image size inputted
+ - Color scheme rebalancing and ensure still high-contrast

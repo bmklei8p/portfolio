@@ -17,8 +17,9 @@ const HomeOne = () => {
 
       {/* has text-loop dependency */}
       <Slider />
-
+    
       {/* About Me */}
+      {/* style={{backgroundColor: "rgb(151 151 151)"}}  */}
       <section style={{backgroundColor: "rgb(151 151 151)"}} id="about" className="section about-section after-left-section">
         <div className="container">
           <About />
