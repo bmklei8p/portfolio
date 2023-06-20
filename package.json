@@ -16,7 +16,8 @@
     "react-scripts": "5.0.1",
     "react-scrollspy": "^3.4.3",
     "sass": "^1.57.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-text-loop": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
