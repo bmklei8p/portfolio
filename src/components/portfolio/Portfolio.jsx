@@ -23,8 +23,8 @@ const AllPortfolioContent = [
     alterText: "Web App",
     techStack: "React, SpringBoot, Postgres",
     date: "July, 2023",
-    portfolioLink:
-      "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
+    portfolioLink: "",
+    gitHubLink: "",
   },
   {
     img: "img/portfolio/3.png",
@@ -34,8 +34,8 @@ const AllPortfolioContent = [
     alterText: "Web App",
     techStack: "React, Srping Boot, Postgres",
     date: "August, 2023",
-    portfolioLink:
-      "https://dribbble.com/shots/16529350-Nairo-Personal-Portfolio-React-Template",
+    portfolioLink: "",
+    gitHubLink: "",
   },
 
 ];

@@ -21,6 +21,9 @@ https://bk-portfolio.azurewebsites.net/
 
 ## Features and updates needed:
  - Update background image for banner to have code/programming image instead of a photoshop type image.
- - Hide scroll bar on modal for larger project details pages
+ - Hide scroll bar on modal for larger project details pages 
  - Project images a consistent size regardless of image size inputted
  - Color scheme rebalancing and ensure still high-contrast
+ - Project details information: text and images need to be updated to current project status/reflection
+ - Update readme with compare/contrast pictures for changes on portfolio from template
+

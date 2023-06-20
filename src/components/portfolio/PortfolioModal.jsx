@@ -1,8 +1,19 @@
-import { forwardRef } from 'react';
+import { forwardRef, useEffect } from 'react';
 import { IoMdClose } from 'react-icons/io'
+
 
 const PortfolioModal = forwardRef(({ project, onClose}, ref) => {
   const { img, title, info, date, techStack, portfolioLink, gitHubLink } = project;
+
+  useEffect(() => {
+    // Add the 'modal-open' class to the body when the modal is opened
+    document.body.classList.add('modal-open');
+    // Remove the 'modal-open' class from the body when the modal is closed
+    return () => {
+      document.body.classList.remove('modal-open');
+    };
+  }, []);
+
 
 return (
   <div className="modal-overlay" ref={ref}>
@@ -26,10 +37,10 @@ return (
             <p>Date: {date}</p>
             <hr style={{margin: "0.5em 0"}}></hr>
             <div>
-              <p>Live Url: <a href={portfolioLink}>fomore.azurewebsites.net</a> </p>
+              <p>Live Url: <a href={portfolioLink}>{portfolioLink}</a> </p>
               <hr style={{margin: "0.5em 0"}}></hr>
             </div>
-            <p>GitHub Repo: <a href={gitHubLink}>github.com/bmklei8p/Fomore</a> </p>
+            <p>GitHub Repo: <a href={gitHubLink}>{gitHubLink}</a> </p>
           </div>
         </div>
       </div>
