@@ -18,13 +18,13 @@ const AllPortfolioContent = [
   {
     img: "img/portfolio/2.png",
     title: "Formula 1 Pitstop",
-    info: "lorem epsum blah blah blah",
+    info: "Mobile first, fully responsive full-stack web app for all things Formula 1. Utilizes Google Maps API, Google Timezone API, Ergast API, and a custom web scraper to provide users with real time, up to date information. ",
     subTitle: "Web App",
     alterText: "Web App",
-    techStack: "React, SpringBoot, Postgres",
+    techStack: "NextJS 13, MongoDB, TailwindCSS, JavaScript",
     date: "July, 2023",
-    portfolioLink: "",
-    gitHubLink: "",
+    portfolioLink: "https://formula-1-pitstop.vercel.app/",
+    gitHubLink: "https://github.com/bmklei8p/formula-1-pitstop",
   },
   {
     img: "img/portfolio/3.png",
@@ -92,7 +92,7 @@ const Portfolio = () => {
                           <span>{val.subTitle}</span>
                         </div>
                         <div className="portfolio-img-container">
-                        <img src={val.img} alt={"none"} onClick={() => handleImageClick(val)} />
+                        <img src={val.img} alt={"Image of web app home page"} onClick={() => handleImageClick(val)} />
                         </div>
                         <a
                           href={val.portfolioLink}

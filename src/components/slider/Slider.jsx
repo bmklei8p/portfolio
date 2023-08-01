@@ -11,7 +11,7 @@ const Slider = () => {
         className="home-banner overlay"
         style={{
           backgroundImage: `url(${
-            process.env.PUBLIC_URL + "img/banner/bg-10.jpeg"
+            process.env.PUBLIC_URL + "img/banner/bg-2.jpeg"
           })`,
         }}
       >

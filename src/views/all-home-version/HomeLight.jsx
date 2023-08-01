@@ -41,9 +41,7 @@ const HomeOne = () => {
             <div className="col-lg-7">
               <h3 className="font-alt">My Portfolio</h3>
               <p>
-                I design and develop services for customers of all sizes,
-                specializing in creating stylish, modern websites, web services
-                and online stores.
+                I design and develop full stack web applications using a variety of languages and frameworks.  Check out some of my work below.
               </p>
             </div>
           </div>

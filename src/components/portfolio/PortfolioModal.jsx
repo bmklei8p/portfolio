@@ -25,13 +25,15 @@ return (
         </div>
         <div className="modal-body">
           <div className="image-container">
-            <img src={img} alt="" />
+            <a href={portfolioLink} target="_blank" rel="noopener noreferrer">
+              <img src={img} alt="" />
+            </a>
           </div>
           <div className="text-container">
-            <h2 style={{fontWeight: "bold"}}>Project Information:</h2>
+            <h2 style={{fontWeight: "bold", marginBottom: "1rem"}}>Project Information:</h2>
             <p>{info}</p>
             <br />
-            <h3 style={{fontWeight: "bold"}}>Project Details:</h3>
+            <h3 style={{fontWeight: "bold", marginBottom: "1rem"}}>Project Details:</h3>
             <p>Tech Stack: {techStack}</p>
             <hr style={{margin: "0.5em 0"}}></hr>
             <p>Date: {date}</p>
