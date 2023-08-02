@@ -26,7 +26,7 @@ return (
         <div className="modal-body">
           <div className="image-container">
             <a href={portfolioLink} target="_blank" rel="noopener noreferrer">
-              <img src={img} alt="" />
+              <img src={img} alt={`front page of ${title} website`} />
             </a>
           </div>
           <div className="text-container">
