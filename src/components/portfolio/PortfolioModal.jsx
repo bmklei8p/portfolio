@@ -39,8 +39,8 @@ return (
             <p>Date: {date}</p>
             <hr style={{margin: "0.5em 0"}}></hr>
             <div>
-              <p>Live Url: <a href={portfolioLink}>{portfolioLink}</a> </p>
-              <hr style={{margin: "0.5em 0"}}></hr>
+              {portfolioLink ? <p>Live Url: <a href={portfolioLink}>{portfolioLink}</a> </p> : null}
+              {portfolioLink ? <hr style={{margin: "0.5em 0"}}></hr>: null}
             </div>
             <p>GitHub Repo: <a href={gitHubLink}>{gitHubLink}</a> </p>
           </div>

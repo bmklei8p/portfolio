@@ -4,18 +4,6 @@ import PortfolioModal from "./PortfolioModal";
 
 const AllPortfolioContent = [
   {
-    img: "img/portfolio/1.png",
-    title: "Fomore",
-    subTitle: "Web App",
-    info: "Itinerary planning app that utilizes Yelp's event and resturant API to provide a real time source of things to do in a city you are traveling too.",
-    date: "December, 2022",
-    techStack: "React, FastApi, MongoDB",
-    alterText: "",
-    gitHubLink: "https://github.com/bmklei8p/Fomore",
-    portfolioLink:
-      "https://fomore.azurewebsites.net/",
-  },
-  {
     img: "img/portfolio/2.png",
     title: "Formula 1 Pitstop",
     info: "Mobile first, fully responsive full-stack web app for all things Formula 1. Utilizes Google Maps API, Google Timezone API, Ergast API, and a custom web scraper to provide users with real time, up to date information. ",
@@ -27,15 +15,27 @@ const AllPortfolioContent = [
     gitHubLink: "https://github.com/bmklei8p/formula-1-pitstop",
   },
   {
-    img: "img/portfolio/3.png",
-    title: "B.O.S.S. App",
-    info: "lorem epsum blah blah blah",
+    img: "img/portfolio/1.png",
+    title: "Fomore",
+    subTitle: "Web App",
+    info: "Itinerary planning app that utilizes Yelp's event and resturant API to provide a real time source of things to do in a city you are traveling too.",
+    date: "December, 2022",
+    techStack: "React, FastApi, MongoDB, Docker, Azure, Bootstrap",
+    alterText: "",
+    gitHubLink: "https://github.com/bmklei8p/Fomore",
+    portfolioLink:
+      "https://fomore.azurewebsites.net/",
+  },
+  {
+    img: "img/portfolio/4.png",
+    title: "Motor Empire",
+    info: "Dockerized, microservice based web application proof of concept for a car dealership managment dashboard. Three services (sales, services, and inventory) are connected via pollers with minute by minute updates. ",
     subTitle: "Web App",
     alterText: "Web App",
-    techStack: "React, Srping Boot, Postgres",
-    date: "August, 2023",
+    techStack: "Django, React, Docker, PostgreSQL, Bootstrap, Poller",
+    date: "December, 2022",
     portfolioLink: "",
-    gitHubLink: "",
+    gitHubLink: "https://github.com/bmklei8p/motor-empire",
   },
 
 ];
@@ -92,7 +92,7 @@ const Portfolio = () => {
                           <span>{val.subTitle}</span>
                         </div>
                         <div className="portfolio-img-container">
-                        <img src={val.img} alt={"Image of web app home page"} onClick={() => handleImageClick(val)} />
+                        <img src={val.img} alt={"Web app home page"} onClick={() => handleImageClick(val)} />
                         </div>
                         <a
                           href={val.portfolioLink}
