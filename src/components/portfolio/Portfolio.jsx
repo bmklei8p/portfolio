@@ -15,6 +15,17 @@ const AllPortfolioContent = [
     gitHubLink: "https://github.com/bmklei8p/formula-1-pitstop",
   },
   {
+    img: "img/portfolio/4.png",
+    title: "Motor Empire",
+    info: "Dockerized, microservice based web application proof of concept for a car dealership managment dashboard. Three services (sales, services, and inventory) are connected via pollers with minute by minute updates. ",
+    subTitle: "Web App",
+    alterText: "Web App",
+    techStack: "Django, React, Docker, PostgreSQL, Bootstrap, Poller",
+    date: "December, 2022",
+    portfolioLink: "",
+    gitHubLink: "https://github.com/bmklei8p/motor-empire",
+  },
+  {
     img: "img/portfolio/1.png",
     title: "Fomore",
     subTitle: "Web App",
@@ -26,18 +37,6 @@ const AllPortfolioContent = [
     portfolioLink:
       "https://fomore.azurewebsites.net/",
   },
-  {
-    img: "img/portfolio/4.png",
-    title: "Motor Empire",
-    info: "Dockerized, microservice based web application proof of concept for a car dealership managment dashboard. Three services (sales, services, and inventory) are connected via pollers with minute by minute updates. ",
-    subTitle: "Web App",
-    alterText: "Web App",
-    techStack: "Django, React, Docker, PostgreSQL, Bootstrap, Poller",
-    date: "December, 2022",
-    portfolioLink: "",
-    gitHubLink: "https://github.com/bmklei8p/motor-empire",
-  },
-
 ];
 
 
