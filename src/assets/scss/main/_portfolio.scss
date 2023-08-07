@@ -62,6 +62,8 @@
   }
   .portfolio-img-container {
     border: 10px solid #372231;
+    max-height: 600px;
+    overflow: hidden;
   }
   img {
     margin: auto;

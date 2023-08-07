@@ -21,7 +21,7 @@ const About = () => {
               I am a problem solver with experience managing the full production
               lifecycle from desigining to deployment. As a pharmacist turned software engineer,
               I have a critical attention to detail, a passion for lifelong learning, and
-              experience managing in a small team, fast passed enviornment. Check out some of my projects below.
+              experience managing in a small team, fast paced environment. Check out some of my projects below.
             </p>
             <div className="row about-list">
               <div className="col-md-6">
@@ -35,7 +35,7 @@ const About = () => {
                 </div>
                 <div className="media">
                   <label>Discord</label>
-                  <p>skype.0404</p>
+                  <p>bmkleinb</p>
                 </div>
                 <div className="media">
                   <label>Freelance</label>

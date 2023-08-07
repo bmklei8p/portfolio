@@ -1,6 +1,6 @@
 import React from "react";
-import TextLoop from "react-text-loop";
 import Social from "../Social";
+import TextLoop from "react-text-loop";
 
 const Slider = () => {
   return (
@@ -11,7 +11,7 @@ const Slider = () => {
         className="home-banner overlay"
         style={{
           backgroundImage: `url(${
-            process.env.PUBLIC_URL + "img/banner/bg-10.jpeg"
+            process.env.PUBLIC_URL + "img/banner/bg-8.jpeg"
           })`,
         }}
       >
@@ -51,6 +51,7 @@ const Slider = () => {
               <div className="hb-typo text-center">
                 <h6>Hi There, I'm</h6>
                 <h1 className="font-alt">Bryan Kleinberg</h1>
+                {/* textloop dependency */}
                 <h2>
                   <TextLoop>
                     <span className="loop-text">Software Engineer</span>

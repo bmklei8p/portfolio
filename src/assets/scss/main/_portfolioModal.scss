@@ -47,6 +47,7 @@ $modal-text-container-margin-left: 20px;
 
         .image-container {
             border: 10px solid #372231;
+            flex-basis: 40%;
           img {
             display: block;
             max-width: 100%;
@@ -54,6 +55,7 @@ $modal-text-container-margin-left: 20px;
         }
 
         .text-container {
+          flex-basis: 60%;
           margin-left: $modal-text-container-margin-left;
           h2,
           h3,

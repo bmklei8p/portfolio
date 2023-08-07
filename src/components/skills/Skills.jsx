@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 
 
 const skillsList = [
+  { id: 2, imageSrc: "img/skills/nextjs_icon.svg", text: 'Next Js' },
   { id: 1, imageSrc: "img/skills/java_icon.png", text: 'Java' },
   { id: 2, imageSrc: "img/skills/python_icon.png", text: 'Python' },
   { id: 3, imageSrc: "img/skills/typescript_icon.png", text: 'TypeScript' },
