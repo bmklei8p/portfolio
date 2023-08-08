@@ -11,7 +11,7 @@ const Slider = () => {
         className="home-banner overlay"
         style={{
           backgroundImage: `url(${
-            process.env.PUBLIC_URL + "img/banner/bg-8.jpeg"
+            process.env.PUBLIC_URL + "img/banner/bg-20.jpeg"
           })`,
         }}
       >
@@ -48,7 +48,7 @@ const Slider = () => {
         <div className="container">
           <div className="row align-items-center full-screen">
             <div className="col-lg-12">
-              <div className="hb-typo text-center">
+              <div className="hb-typo text-start">
                 <h6>Hi There, I'm</h6>
                 <h1 className="font-alt">Bryan Kleinberg</h1>
                 {/* textloop dependency */}
