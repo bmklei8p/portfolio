@@ -48,7 +48,7 @@ const Slider = () => {
         <div className="container">
           <div className="row align-items-center full-screen">
             <div className="col-lg-12">
-              <div className="hb-typo text-start">
+              <div className="hb-typo text-center">
                 <h6>Hi There, I'm</h6>
                 <h1 className="font-alt">Bryan Kleinberg</h1>
                 {/* textloop dependency */}
