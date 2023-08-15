@@ -14,11 +14,11 @@ const SocialShare = [
 const Footer = () => {
   return (
     <>
-      <div className="row align-items-center">
+      <div   className="row align-items-center">
         <div className="col-md-6 my-2">
           <div className="nav justify-content-center text-center text-md-left justify-content-md-start">
             {SocialShare.map((val, i) => (
-              <a key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
+              <a style={{fontSize: "1.25rem"}} key={i} href={`${val.link}`} rel="noreferrer" target="_blank">
                 {val.Social}
               </a>
             ))}
@@ -28,7 +28,7 @@ const Footer = () => {
         {/* End .col */}
 
         <div className="col-md-6 my-2 text-center text-md-right">
-          <p>
+          <p style={{fontSize: "1.25rem"}}>
             © {new Date().getFullYear()} copyright{" "}
               Bryan Kleinberg
             all rights reserved
