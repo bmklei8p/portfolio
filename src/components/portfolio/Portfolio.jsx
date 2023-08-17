@@ -9,7 +9,7 @@ const AllPortfolioContent = [
     info: "Mobile first, fully responsive full-stack web app for all things Formula 1. Utilizes Google Maps API, Google Timezone API, Ergast API, and a custom web scraper to provide users with real time, up to date information. ",
     subTitle: "Web App",
     alterText: "Web App",
-    techStack: "NextJS 13, MongoDB, TailwindCSS, JavaScript",
+    techStack: "NextJS 13, Twilio, MongoDB, TailwindCSS, JavaScript",
     date: "July, 2023",
     portfolioLink: "https://formula-1-pitstop.vercel.app/",
     gitHubLink: "https://github.com/bmklei8p/formula-1-pitstop",

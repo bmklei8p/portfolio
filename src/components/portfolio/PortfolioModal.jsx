@@ -30,10 +30,10 @@ return (
             </a>
           </div>
           <div className="text-container">
-            <h2 style={{fontWeight: "bold", marginBottom: "1rem"}}>Project Information:</h2>
+            <h2 style={{fontWeight: "bold", marginBottom: "1rem", marginTop: "1rem"}}>Project Information:</h2>
             <p>{info}</p>
             <br />
-            <h3 style={{fontWeight: "bold", marginBottom: "1rem"}}>Project Details:</h3>
+            <h2 style={{fontWeight: "bold", marginBottom: "1rem"}}>Project Details:</h2>
             <p>Tech Stack: {techStack}</p>
             <hr style={{margin: "0.5em 0"}}></hr>
             <p>Date: {date}</p>
