@@ -46,7 +46,7 @@ const About = () => {
             </div>
             {/* End .row */}
             <div className="btn-bar">
-              <a className="px-btn px-btn-theme" href="img/bryan_kleinberg_resume.pdf" download>
+              <a className="px-btn px-btn-theme" href="img/Bryan_Kleinberg_Resume.pdf" download>
                 Download Resume
               </a>
             </div>
