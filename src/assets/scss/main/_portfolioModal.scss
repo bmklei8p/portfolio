@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track background color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+  border-radius: 0px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Thumb color on hover */
+}
+
+
 $modal-overlay-bg-color: rgba(0, 0, 0, 0.9);
 $modal-max-width: 1200px;
 $modal-padding: 20px;
@@ -16,7 +34,6 @@ $modal-text-container-margin-left: 20px;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  overflow-y: auto;
 
   .modal {
     background-color: $px-altbeige;
@@ -30,9 +47,9 @@ $modal-text-container-margin-left: 20px;
       top: 50%;
       margin-top: 0;
       flex-direction: column;
-      overflow: scroll;
-      max-height: 90vh;
+      max-height: 80vh;
       overflow-y: auto;
+      
 
       .close {
         position: absolute;
@@ -47,10 +64,10 @@ $modal-text-container-margin-left: 20px;
 
         .image-container {
             border: 10px solid #372231;
-            flex-basis: 40%;
           img {
             display: block;
-            max-width: 100%;
+            height: 800px;
+            // max-height: 100vh;
           }
         }
 
@@ -78,8 +95,16 @@ $modal-text-container-margin-left: 20px;
         flex-direction: column;
 
         .modal-body {
-          flex-direction: column;
+          flex-direction: column-reverse;
 
+          .image-container {
+            margin-top: 2rem;
+            img {
+              height: auto;
+              width: 100%;
+            }
+          }
+          
           .text-container {
             margin-left: 0;
             margin-top: $modal-text-margin-top;
